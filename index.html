@@ -4,144 +4,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>protofolio</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="./bootstrap.min.css">
   <link rel="stylesheet" href="./index.css">
+  <style>
+    .project-item {
+      display: none;
+    }
 
-
+    .project-item.show {
+      display: block;
+    }
+  </style>
 </head>
 
 <body>
-
   <header>
-
     <div class="layer">
-
-
-
-
-      <nav class="navbar navbar-expand-lg bg-black fixed-top fw-bold  p-3 ">
+      <nav class="navbar navbar-expand-lg bg-black fixed-top fw-bold p-3">
         <div class="container">
-          <a class="navbar-brand text-white " href="#">DevFolio</a>
-          <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+          <a class="navbar-brand text-white" href="#">DevFolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon "></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
-
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item text-white ms-2">
-                <a class="nav-link active text-white " aria-current="page" href="#">Home</a>
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item ms-2">
-                <a class="nav-link text-white " href="#aboutme">About</a>
+                <a class="nav-link text-white" href="#aboutme">About</a>
               </li>
-
               <li class="nav-item ms-2">
-                <a class="nav-link text-white" href="#services">SERVICES</a>
+                <a class="nav-link text-white" href="#services">Services</a>
               </li>
               <li class="nav-item ms-2">
                 <a class="nav-link text-white" href="#Skills">Skills</a>
               </li>
               <li class="nav-item ms-2">
-                <a class="nav-link text-white" href="#projects">PROJECTS</a>
+                <a class="nav-link text-white" href="#projects">Projects</a>
               </li>
-
-              <li class="nav-item ms-2 ">
-                <a class="nav-link text-white " href="#contact">CONTACT</a>
+              <li class="nav-item ms-2">
+                <a class="nav-link text-white" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
-
-      <div class=" pt-5 mt-5">
+      <div class="pt-5 mt-5">
         <div class="row text-light text-center d-flex justify-content-center align-items-center pt-5 mt-5">
           <h1 class="col-12">I am <span>Sara Abdelrhman</span></h1>
-
           <p class="ani"></p>
         </div>
         <div class="buttons d-flex flex-column flex-md-row justify-content-center align-items-center pt-4">
           <p class="text-center mb-4 mb-md-0">
-            Fresh graduate from Helwan University with an excellent degree(A) in Business and Information Systems (BIS).
-             Front-end developer proficient in React, JavaScript (ES6+ and OOP principles), HTML, CSS, and TypeScript.
-              Skilled in technical, business, and creative aspects.
-
+            Fresh graduate from Helwan University with an excellent degree (A) in Business and Information Systems
+            (BIS).
+            Front-end developer proficient in React, JavaScript (ES6+ and OOP principles), HTML, CSS, and TypeScript.
+            Skilled in technical, business, and creative aspects.
           </p>
-
         </div>
-        <!-- <div class="d-flex justify-content-center pt-3"><button class="button1 rounded-2 p-2 ps-4 pe-4 border-1 me-2">
-            <a href="path_to_your_cv.pdf" download=""
-              class="link-offset-2 link-underline link-underline-opacity-0 text-light">Download C.V</a>
-          </button>
-
-          <button class="button2 rounded-2 p-2 ps-4 pe-4 border-1">Contact Me</button>
-        </div> -->
       </div>
-
-
     </div>
   </header>
 
-
-  <div class="aboutme d-flex justify-content-center align-content-center " id="aboutme">
+  <div class="aboutme d-flex justify-content-center align-content-center" id="aboutme">
     <div class="container d-flex row bg-white p-5 m-5 shadow-lg">
-      <div class="man col-xxl-6   col-xl-6 col-lg-12 col-md-12">
-        <div class="tes d-flex justify-content-between align-content-center  ">
+      <div class="man col-xxl-6 col-xl-6 col-lg-12 col-md-12">
+        <div class="tes d-flex justify-content-between align-content-center">
           <img src="./img/photo_5780491811494675498_y.jpg" class="rounded-2 w-50 p-3">
-          <ul class="list-unstyled pe-5 me-5 ">
-            <li class="text-muted text-decoration-none p-1 "><span class="text-black fw-bold  ">Name: </span>Sara
+          <ul class="list-unstyled pe-5 me-5">
+            <li class="text-muted text-decoration-none p-1"><span class="text-black fw-bold">Name: </span>Sara
               Abdelrhman</li>
-            <li class="text-decoration-none text-muted  p-1  "><span class="text-black fw-bolder  ">profile: </span ">Front-end developer</li>
-  <li class=" text-decoration-none text-muted p-1 "><span class=" text-black fw-bolder ">Email: </span "> <a
-                href="">Saraabdelrhman
-    162@gmail.com</a></li>
-            <li class="text-decoration-none text-muted  p-1 "><span class="text-black fw-bolder  ">Phone: </span ">  (+20) 1116126212</li>
-</ul>
+            <li class="text-decoration-none text-muted p-1"><span class="text-black fw-bolder">Profile: </span>Front-end
+              developer</li>
+            <li class="text-decoration-none text-muted p-1"><span class="text-black fw-bolder">Email: </span><a
+                href="mailto:Saraabdelrhman162@gmail.com">Saraabdelrhman162@gmail.com</a></li>
+            <li class="text-decoration-none text-muted p-1"><span class="text-black fw-bolder">Phone: </span>(+20)
+              1116126212</li>
+          </ul>
         </div>
-
-<div class=" skills text-black pt-5 ">
-  <!--  
-  <p>HTML 85%</p>
-  <div class=" progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0"
-                aria-valuemax="100">
-              <div class="progress-bar" style="width: 85%"></div>
+        <div class="skills text-black pt-5">
+          <!-- Progress bars can be added here -->
         </div>
-        <p>CSS3 75%</p>
-        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0"
-          aria-valuemax="100">
-          <div class="progress-bar" style="width: 75%"></div>
-        </div>
-        <p>JAVASCRIPT 90%</p>
-        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0"
-          aria-valuemax="100">
-          <div class="progress-bar" style="width: 90%"></div>
-        </div>
-        <p>React Js 50%</p>
-        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0"
-          aria-valuemax="100">
-          <div class="progress-bar" style="width: 50%"></div>
-        </div> -->
+      </div>
+      <div class="text col-xxl-6 row">
+        <h5>ABOUT ME</h5>
+        <p class="text-muted pt-4 col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          Front-end developer with a strong foundation in React, JavaScript (ES6+), HTML, CSS, Bootstrap, and
+          TypeScript. Experienced in crafting responsive designs.
+        </p>
+        <p class="text-muted col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          I thrive in collaborative environments, leveraging my skills in problem-solving and effective communication to
+          deliver high-quality projects.
+        </p>
+        <p class="text-muted col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          With a background in Business Information Systems and hands-on experience in freelancing and data-driven
+          marketing, I bring a holistic approach to every project, ensuring both technical excellence and business
+          impact.
+        </p>
       </div>
     </div>
-    <div class="text  col-xxl-6   row">
-      <h5 class="">ABOUT ME</h5>
-      <p class="text-muted pt-4  col-xxl-12  col-xl-12 col-lg-12 col-md-12 col-sm-12">
-        front-end developer with a strong foundation in React, JavaScript (ES6+), HTML, CSS, bootstrap and TypeScript.
-        Experienced in crafting responsive
-      </p>
-      <p class="text-muted  col-xxl-12   col-xl-12 col-lg-12 col-md-12 col-sm-12"> I thrive in collaborative
-        environments, leveraging my skills in problem-solving and effective communication to deliver high-quality
-        Projects</p>
-      <p class="text-muted  col-xxl-12  col-xl-12 col-lg-12 col-md-12 col-sm-12">I have a background in Business
-        Information Systems and hands-on experience in freelancing and data-driven marketing, I bring a holistic
-        approach to every project, ensuring both technical excellence and business impact</p>
-    </div>
-  </div>
   </div>
 
   <div class="services text-center m-5 m-auto" id="services">
@@ -149,394 +115,389 @@
     <p class="line">I specialize in:</p>
     <div class="container-fluid mx-auto">
       <div class="row boxes m-5 p-5 mx-auto gx-5 gy-5 gap-5">
-
         <div class="box col-lg-3 col-md-12 col-sm-12 bg-white m-4 rounded-2 shadow-lg m-auto">
           <i class="fa-solid fa-code fs-1" style="color: #000000;"></i>
           <h4>FRONTEND DEVELOPMENT</h4>
           <p>Creating responsive and interactive user interfaces using React, JavaScript, HTML, CSS, and TypeScript.</p>
         </div>
-
         <div class="box col-lg-3 col-md-12 col-sm-12 bg-white m-4 rounded-2 shadow-lg m-auto">
           <i class="fa-solid fa-desktop fs-1" style="color: #000000;"></i>
           <h4>UI/UX DESIGN</h4>
           <p>Designing intuitive user experiences with a focus on usability and accessibility.</p>
         </div>
-
         <div class="box col-lg-3 col-md-12 col-sm-12 bg-white m-4 rounded-2 shadow-lg m-auto">
           <i class="fa-solid fa-paint-brush fs-1" style="color: #000000;"></i>
           <h4>WEB DESIGN</h4>
           <p>Translating client requirements into visually appealing website designs.</p>
         </div>
-
         <div class="box col-lg-3 col-md-12 col-sm-12 bg-white m-4 rounded-2 shadow-lg m-auto">
           <i class="fa-solid fa-magnifying-glass-plus fs-1" style="color: #000000;"></i>
           <h4>RESPONSIVE DESIGN</h4>
           <p>Ensuring websites perform seamlessly across all devices and screen sizes.</p>
         </div>
-
         <div class="box col-lg-3 col-md-12 col-sm-12 bg-white m-4 rounded-2 shadow-lg m-auto">
           <i class="fa-solid fa-cogs fs-1" style="color: #000000;"></i>
           <h4>WEB PERFORMANCE</h4>
           <p>Optimizing frontend performance for fast loading times and improved user experience.</p>
         </div>
-
         <div class="box col-lg-3 col-md-12 col-sm-12 bg-white m-4 rounded-2 shadow-lg m-auto">
           <i class="fa-solid fa-search fs-1" style="color: #000000;"></i>
           <h4>SEO IMPLEMENTATION</h4>
           <p>Implementing SEO best practices to enhance website visibility and search engine rankings.</p>
         </div>
-
       </div>
     </div>
   </div>
-
 
   <div class="container-fluid" id="Skills">
     <h3 class="fw-bolder fs-1 text-center">Skills</h3>
     <div class="">
-        <div class="layer2 d-flex flex-wrap justify-content-center align-items-center text-center mt-5 pt-5">
-            <!-- Row 1 -->
-            <div class="row w-100">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-4">
-                    <img src="./img/react-icon-in-a-hexagon-vector-36587857-removebg-preview.png" class="img-fluid skill-icon" alt="React">
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-4">
-                    <img src="./img/javascript-removebg-preview.png" class="img-fluid skill-icon" alt="JavaScript">
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-4">
-                    <img src="./img/css-removebg-preview.png" class="img-fluid skill-icon" alt="CSS">
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-4">
-                    <img src="./img/html-removebg-preview.png" class="img-fluid skill-icon" alt="HTML">
-                </div>
-            </div>
-            <!-- Row 2 -->
-            <div class="row w-100">
-              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-4">
-                <img src="./img/c++.png" class="img-fluid skill-icon" alt="C++">
-            </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-4">
-                  <img src="./img/Adobe_Photoshop_CC_icon.svg.png" class="img-fluid skill-icon" alt="Photoshop">
-              </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-4">
-                    <img src="./img/bootstrap-removebg-preview.png" class="img-fluid skill-icon " alt="Bootstrap" >
-                </div>
-                
-            </div>
+      <div class="layer2 d-flex flex-wrap justify-content-center align-items-center text-center mt-5 pt-5">
+        <div class="row w-100">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-4">
+            <img src="./img/react-icon-in-a-hexagon-vector-36587857-removebg-preview.png" class="img-fluid skill-icon"
+              alt="React">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-4">
+            <img src="./img/javascript-removebg-preview.png" class="img-fluid skill-icon" alt="JavaScript">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-4">
+            <img src="./img/css-removebg-preview.png" class="img-fluid skill-icon" alt="CSS">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-4">
+            <img src="./img/html-removebg-preview.png" class="img-fluid skill-icon" alt="HTML">
+          </div>
         </div>
+        <div class="row w-100">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-4">
+            <img src="./img/c++.png" class="img-fluid skill-icon" alt="C++">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-4">
+            <img src="./img/Adobe_Photoshop_CC_icon.svg.png" class="img-fluid skill-icon" alt="Photoshop">
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mb-4">
+            <img src="./img/bootstrap-removebg-preview.png" class="img-fluid skill-icon" alt="Bootstrap">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="portfolio  mt-5 mb-5" id="projects">
-    <div class="conatiner">
-      <div class="row ">
-        <div class="text text-center ">
-          <h2 class=" fw-bolder ">Projects</h2>
+  <div class="portfolio mt-5 mb-5" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="text text-center">
+          <h2 class="fw-bolder">Projects</h2>
         </div>
-
-        <ul class="nav nav-tabs d-flex justify-content-center  " id="myTab" role="tablist">
+        <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-              type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">ALL</button>
+            <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane"
+              type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">ALL</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-              type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">React</button>
+            <button class="nav-link" id="react-tab" data-bs-toggle="tab" data-bs-target="#react-tab-pane" type="button"
+              role="tab" aria-controls="react-tab-pane" aria-selected="false">React</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
-              type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Js</button>
+            <button class="nav-link" id="js-tab" data-bs-toggle="tab" data-bs-target="#js-tab-pane" type="button"
+              role="tab" aria-controls="js-tab-pane" aria-selected="false">Js</button>
           </li>
-          <!-- <li class="nav-item" role="presentation">
-            <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane"
-              type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Bootstrap</button>
-          </li> -->
         </ul>
         <div class="tab-content p-0" id="myTabContent">
-          <div class="tab-pane fade show active p-0 m-0" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-            tabindex="0">
-            <div class="container">
-              <div class="all row">
+          <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab">
+            <div class="row">
+              <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12">
                 <a href="https://saraabdelrhman.github.io/Quotes/"
                   class="link-offset-2 link-underline link-underline-opacity-0">
-                  <div
-                    class="layer col-xxl-4 col-xl-4 col-md-6 col-sm-12  pb-5 d-flex justify-content-center align-items-center ">
+                  <div class="layer pb-5 d-flex justify-content-center align-items-center">
                     <img src="./img/quotes.png" class="h-100">
-                    <div class="caption text-center d-flex  justify-content-center align-items-center flex-column  ">
+                    <div class="caption text-center d-flex justify-content-center align-items-center flex-column">
                       <h5>Quotes</h5>
-                      <div class="captions d-flex text-center  ">
+                      <div class="captions d-flex text-center">
                         <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
-                        <i class=" fa fa-search-plus  p-3" aria-hidden="true"></i>
+                        <i class="fa fa-search-plus p-3" aria-hidden="true"></i>
                       </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12">
+                <a href="https://saraabdelrhman.github.io/To-do-list/"
+                  class="link-offset-2 link-underline link-underline-opacity-0">
+                  <div class="layer pb-5 d-flex justify-content-center align-items-center">
+                    <img src="./img/to do.png">
+                    <div class="caption text-center d-flex justify-content-center align-items-center flex-column">
+                      <h5>To Do List</h5>
+                      <div class="captions d-flex text-center">
+                        <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
+                        <i class="fa fa-search-plus p-3" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12">
+                <a href="https://saraabdelrhman.github.io/Daniels/"
+                  class="link-offset-2 link-underline link-underline-opacity-0">
+                  <div class="layer pb-5 d-flex justify-content-center align-items-center">
+                    <img src="./img/2024-07-06 (2).png">
+                    <div class="caption text-center d-flex justify-content-center align-items-center flex-column">
+                      <h5>Portfolio</h5>
+                      <div class="captions d-flex text-center">
+                        <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
+                        <i class="fa fa-search-plus p-3" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12">
+                <a href="https://saraabdelrhman.github.io/Rock-Paper-Scissors./"
+                  class="link-offset-2 link-underline link-underline-opacity-0">
+                  <div class="layer pb-5 d-flex justify-content-center align-items-center">
+                    <img src="./img/paper.png">
+                    <div class="caption text-center d-flex justify-content-center align-items-center flex-column">
+                      <h5>Rock-Paper-Scissors</h5>
+                      <div class="captions d-flex text-center">
+                        <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
+                        <i class="fa fa-search-plus p-3" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12">
+                <a href="https://saraabdelrhman.github.io/new-movies/"
+                  class="link-offset-2 link-underline link-underline-opacity-0">
+                  <div class="layer pb-5 d-flex justify-content-center align-items-center">
+                    <img src="./img/movies.png">
+                    <div class="caption text-center d-flex justify-content-center align-items-center flex-column">
+                      <h5>Movies</h5>
+                      <div class="captions d-flex text-center">
+                        <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
+                        <i class="fa fa-search-plus p-3" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12">
+                <a href="https://saraabdelrhman.github.io/Guess-number/"
+                  class="link-offset-2 link-underline link-underline-opacity-0">
+                  <div class="layer pb-5 d-flex justify-content-center align-items-center">
+                    <img src="./img/guess.png">
+                    <div class="caption text-center d-flex justify-content-center align-items-center flex-column">
+                      <h5>Guess the number</h5>
+                      <div class="captions d-flex text-center">
+                        <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
+                        <i class="fa fa-search-plus p-3" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12">
+                <a href="https://saraabdelrhman.github.io/Bakery/"
+                  class="link-offset-2 link-underline link-underline-opacity-0">
+                  <div class="layer pb-5 d-flex justify-content-center align-items-center">
+                    <img src="./img/bakery.png">
+                    <div class="caption text-center d-flex justify-content-center align-items-center flex-column">
+                      <h5>Bakery</h5>
+                      <div class="captions d-flex text-center">
+                        <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
+                        <i class="fa fa-search-plus p-3" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12">
+                <a href="https://saraabdelrhman.github.io/Product-managment/"
+                  class="link-offset-2 link-underline link-underline-opacity-0">
+                  <div class="layer pb-5 d-flex justify-content-center align-items-center">
+                    <img src="./img/product.png">
+                    <div class="caption text-center d-flex justify-content-center align-items-center flex-column">
+                      <h5>Product Management</h5>
+                      <div class="captions d-flex text-center">
+                        <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
+                        <i class="fa fa-search-plus p-3" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12">
+                <a href="https://country-weather-one.vercel.app/"
+                  class="link-offset-2 link-underline link-underline-opacity-0">
+                  <div class="layer pb-5 d-flex justify-content-center align-items-center">
+                    <img src="./img/weather.png">
+                    <div class="caption text-center d-flex justify-content-center align-items-center flex-column">
+                      <h5>Weather</h5>
+                      <div class="captions d-flex text-center">
+                        <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
+                        <i class="fa fa-search-plus p-3" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12">
+                <a href="https://saraabdelrhman.github.io/Gym/"
+                  class="link-offset-2 link-underline link-underline-opacity-0">
+                  <div class="layer pb-5 d-flex justify-content-center align-items-center">
+                    <img src="./img/gym.png">
+                    <div class="caption text-center d-flex justify-content-center align-items-center flex-column">
+                      <h5>Gym</h5>
+                      <div class="captions d-flex text-center">
+                        <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
+                        <i class="fa fa-search-plus p-3" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
                 </a>
               </div>
             </div>
-        
-            
-
-
-            <div
-              class="layer col-xxl-4 col-xl-4 col-md-6 col-sm-12  pb-5 d-flex justify-content-center align-items-center ">
-           
-              <img src="./img/to do.png">
-              <div class="caption text-center d-flex  justify-content-center align-items-center flex-column  ">
-                <a href="https://saraabdelrhman.github.io/To-do-list/" 
-                class="link-offset-2 link-underline link-underline-opacity-0">
-                <h5>To Do List</h5>
-                <div class="captions d-flex text-center  ">
-                  <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
-                  <i class=" fa fa-search-plus  p-3" aria-hidden="true"></i>
-                </div>
-              </a>
-              </div>
-           
-            </div>
-            <div class="layer col-xxl-4 col-xl-4 col-md-6 col-sm-12  pb-5 d-flex justify-content-center align-items-center ">
-           
-              <img src="./img/2024-07-06 (2).png">
-              <div class="caption text-center d-flex  justify-content-center align-items-center flex-column  ">
-                <a href="https://saraabdelrhman.github.io/Daniels/" 
-                class="link-offset-2 link-underline link-underline-opacity-0">
-                <h5>portfolio</h5>
-                <div class="captions d-flex text-center  ">
-                  <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
-                  <i class=" fa fa-search-plus  p-3" aria-hidden="true"></i>
-                </div>
-              </a>
-              </div>
-           
-            </div>
-            <div class="layer col-xxl-4 col-xl-4 col-md-6 col-sm-12  pb-5 d-flex justify-content-center align-items-center ">
-           
-              <img src="./img/paper.png">
-              <div class="caption text-center d-flex  justify-content-center align-items-center flex-column  ">
-                <a href="https://saraabdelrhman.github.io/Rock-Paper-Scissors./" 
-                class="link-offset-2 link-underline link-underline-opacity-0">
-                <h5>Rock-Paper-Scissors</h5>
-                <div class="captions d-flex text-center  ">
-                  <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
-                  <i class=" fa fa-search-plus  p-3" aria-hidden="true"></i>
-                </div>
-              </a>
-              </div>
-           
-            </div>
-            <div class="layer col-xxl-4 col-xl-4 col-md-6 col-sm-12  pb-5 d-flex justify-content-center align-items-center ">
-           
-              <img src="./img/guess.png">
-              <div class="caption text-center d-flex  justify-content-center align-items-center flex-column  ">
-                <a href="https://saraabdelrhman.github.io/Guess-number/" 
-                class="link-offset-2 link-underline link-underline-opacity-0">
-                <h5>Guess the number</h5>
-                <div class="captions d-flex text-center  ">
-                  <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
-                  <i class=" fa fa-search-plus  p-3" aria-hidden="true"></i>
-                </div>
-              </a>
-              </div>
-           
-            </div>
-            <div class="layer col-xxl-4 col-xl-4 col-md-6 col-sm-12  pb-5 d-flex justify-content-center align-items-center ">
-           
-              <img src="./img/bakery.png">
-              <div class="caption text-center d-flex  justify-content-center align-items-center flex-column  ">
-                <a href="https://saraabdelrhman.github.io/Bakery/" 
-                class="link-offset-2 link-underline link-underline-opacity-0">
-                <h5>Bakery</h5>
-                <div class="captions d-flex text-center  ">
-                  <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
-                  <i class=" fa fa-search-plus  p-3" aria-hidden="true"></i>
-                </div>
-              </a>
-              </div>
-           
-            </div>
-            <div class="layer col-xxl-4 col-xl-4 col-md-6 col-sm-12  pb-5 d-flex justify-content-center align-items-center ">
-           
-              <img src="./img/product.png">
-              <div class="caption text-center d-flex  justify-content-center align-items-center flex-column  ">
-                <a href="https://saraabdelrhman.github.io/Product-managment/" 
-                class="link-offset-2 link-underline link-underline-opacity-0">
-                <h5>product-managment</h5>
-                <div class="captions d-flex text-center  ">
-                  <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
-                  <i class=" fa fa-search-plus  p-3" aria-hidden="true"></i>
-                </div>
-              </a>
-              </div>
-           
-            </div>
-            <div class="layer col-xxl-4 col-xl-4 col-md-6 col-sm-12  pb-5 d-flex justify-content-center align-items-center ">
-           
-              <img src="./img/weather.png">
-              <div class="caption text-center d-flex  justify-content-center align-items-center flex-column  ">
-                <a href="https://country-weather-one.vercel.app/" 
-                class="link-offset-2 link-underline link-underline-opacity-0">
-                <h5>Weather</h5>
-                <div class="captions d-flex text-center  ">
-                  <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
-                  <i class=" fa fa-search-plus  p-3" aria-hidden="true"></i>
-                </div>
-              </a>
-              </div>
-           
-            </div>
-            <div class="layer col-xxl-4 col-xl-4 col-md-6 col-sm-12  pb-5 d-flex justify-content-center align-items-center ">
-           
-              <img src="./img/gym.png">
-              <div class="caption text-center d-flex  justify-content-center align-items-center flex-column  ">
-                <a href="https://saraabdelrhman.github.io/Gym/" 
-                class="link-offset-2 link-underline link-underline-opacity-0">
-                <h5>Gym</h5>
-                <div class="captions d-flex text-center  ">
-                  <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
-                  <i class=" fa fa-search-plus  p-3" aria-hidden="true"></i>
-                </div>
-              </a>
-              </div>
-           
-            </div>
-
-
-           
           </div>
+          <div class="tab-pane fade" id="react-tab-pane" role="tabpanel" aria-labelledby="react-tab">
+            <div class="row">
 
-        </div>
-      </div>
-      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-        <div class="container">
-          <div class="all row">
-
-            <div class="layer col-xxl-4 col-xl-4 col-md-6 col-sm-12  pb-5 d-flex justify-content-center align-items-center ">
-           
-              <img src="./img/weather.png">
-              <div class="caption text-center d-flex  justify-content-center align-items-center flex-column  ">
-                <a href="https://country-weather-one.vercel.app/" 
-                class="link-offset-2 link-underline link-underline-opacity-0">
-                <h5>Weather</h5>
-                <div class="captions d-flex text-center  ">
-                  <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
-                  <i class=" fa fa-search-plus  p-3" aria-hidden="true"></i>
-                </div>
-              </a>
+              <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12">
+                <a href="https://saraabdelrhman.github.io/new-movies/"
+                  class="link-offset-2 link-underline link-underline-opacity-0">
+                  <div class="layer pb-5 d-flex justify-content-center align-items-center">
+                    <img src="./img/movies.png">
+                    <div class="caption text-center d-flex justify-content-center align-items-center flex-column">
+                      <h5>Movies</h5>
+                      <div class="captions d-flex text-center">
+                        <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
+                        <i class="fa fa-search-plus p-3" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
               </div>
-           
+              <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12">
+                <a href="https://country-weather-one.vercel.app/"
+                  class="link-offset-2 link-underline link-underline-opacity-0">
+                  <div class="layer pb-5 d-flex justify-content-center align-items-center">
+                    <img src="./img/weather.png">
+                    <div class="caption text-center d-flex justify-content-center align-items-center flex-column">
+                      <h5>Weather</h5>
+                      <div class="captions d-flex text-center">
+                        <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
+                        <i class="fa fa-search-plus p-3" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
-
           </div>
+          <div class="tab-pane fade" id="js-tab-pane" role="tabpanel" aria-labelledby="js-tab">
+            <div class="row">
+              <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12">
+                <a href="https://saraabdelrhman.github.io/To-do-list/"
+                  class="link-offset-2 link-underline link-underline-opacity-0">
+                  <div class="layer pb-5 d-flex justify-content-center align-items-center">
+                    <img src="./img/to do.png">
+                    <div class="caption text-center d-flex justify-content-center align-items-center flex-column">
+                      <h5>To Do List</h5>
+                      <div class="captions d-flex text-center">
+                        <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
+                        <i class="fa fa-search-plus p-3" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12">
+                <a href="https://saraabdelrhman.github.io/Rock-Paper-Scissors./"
+                  class="link-offset-2 link-underline link-underline-opacity-0">
+                  <div class="layer pb-5 d-flex justify-content-center align-items-center">
+                    <img src="./img/paper.png">
+                    <div class="caption text-center d-flex justify-content-center align-items-center flex-column">
+                      <h5>Rock-Paper-Scissors</h5>
+                      <div class="captions d-flex text-center">
+                        <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
+                        <i class="fa fa-search-plus p-3" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12">
+                <a href="https://saraabdelrhman.github.io/Guess-number/"
+                  class="link-offset-2 link-underline link-underline-opacity-0">
+                  <div class="layer pb-5 d-flex justify-content-center align-items-center">
+                    <img src="./img/guess.png">
+                    <div class="caption text-center d-flex justify-content-center align-items-center flex-column">
+                      <h5>Guess the number</h5>
+                      <div class="captions d-flex text-center">
+                        <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
+                        <i class="fa fa-search-plus p-3" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12">
+                <a href="https://saraabdelrhman.github.io/Gym/"
+                  class="link-offset-2 link-underline link-underline-opacity-0">
+                  <div class="layer pb-5 d-flex justify-content-center align-items-center">
+                    <img src="./img/gym.png">
+                    <div class="caption text-center d-flex justify-content-center align-items-center flex-column">
+                      <h5>Gym</h5>
+                      <div class="captions d-flex text-center">
+                        <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
+                        <i class="fa fa-search-plus p-3" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
 
+              <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12">
+                <a href="https://saraabdelrhman.github.io/Quotes/"
+                  class="link-offset-2 link-underline link-underline-opacity-0">
+                  <div class="layer pb-5 d-flex justify-content-center align-items-center">
+                    <img src="./img/quotes.png" class="h-100">
+                    <div class="caption text-center d-flex justify-content-center align-items-center flex-column">
+                      <h5>Quotes</h5>
+                      <div class="captions d-flex text-center">
+                        <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
+                        <i class="fa fa-search-plus p-3" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xxl-4 col-xl-4 col-md-6 col-sm-12">
+                <a href="https://saraabdelrhman.github.io/Product-managment/"
+                  class="link-offset-2 link-underline link-underline-opacity-0">
+                  <div class="layer pb-5 d-flex justify-content-center align-items-center">
+                    <img src="./img/product.png">
+                    <div class="caption text-center d-flex justify-content-center align-items-center flex-column">
+                      <h5>Product Management</h5>
+                      <div class="captions d-flex text-center">
+                        <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
+                        <i class="fa fa-search-plus p-3" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-        <div class="container">
-          <div class="all row">
-
-            <div class="layer col-xxl-4 col-xl-4 col-md-6 col-sm-12  pb-5 d-flex justify-content-center align-items-center ">
-           
-              <img src="./img/gym.png">
-              <div class="caption text-center d-flex  justify-content-center align-items-center flex-column  ">
-                <a href="https://saraabdelrhman.github.io/Gym/" 
-                class="link-offset-2 link-underline link-underline-opacity-0">
-                <h5>Gym</h5>
-                <div class="captions d-flex text-center  ">
-                  <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
-                  <i class=" fa fa-search-plus  p-3" aria-hidden="true"></i>
-                </div>
-              </a>
-              </div>
-           
-            </div>
-            <div class="layer col-xxl-4 col-xl-4 col-md-6 col-sm-12  pb-5 d-flex justify-content-center align-items-center ">
-           
-              <img src="./img/product.png">
-              <div class="caption text-center d-flex  justify-content-center align-items-center flex-column  ">
-                <a href="https://saraabdelrhman.github.io/Product-managment/" 
-                class="link-offset-2 link-underline link-underline-opacity-0">
-                <h5>Product-managment</h5>
-                <div class="captions d-flex text-center  ">
-                  <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
-                  <i class=" fa fa-search-plus  p-3" aria-hidden="true"></i>
-                </div>
-              </a>
-              </div>
-           
-            </div>
-            <div class="layer col-xxl-4 col-xl-4 col-md-6 col-sm-12  pb-5 d-flex justify-content-center align-items-center ">
-           
-              <img src="./img/paper.png">
-              <div class="caption text-center d-flex  justify-content-center align-items-center flex-column  ">
-                <a href="https://saraabdelrhman.github.io/Rock-Paper-Scissors./" 
-                class="link-offset-2 link-underline link-underline-opacity-0">
-                <h5>Rock-Paper-Scissors</h5>
-                <div class="captions d-flex text-center  ">
-                  <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
-                  <i class=" fa fa-search-plus  p-3" aria-hidden="true"></i>
-                </div>
-              </a>
-              </div>
-           
-            </div>
-            <div class="layer col-xxl-4 col-xl-4 col-md-6 col-sm-12  pb-5 d-flex justify-content-center align-items-center ">
-           
-              <img src="./img/quotes.png">
-              <div class="caption text-center d-flex  justify-content-center align-items-center flex-column  ">
-                <a href="https://saraabdelrhman.github.io/Quotes/" 
-                class="link-offset-2 link-underline link-underline-opacity-0">
-                <h5>Quotes</h5>
-                <div class="captions d-flex text-center  ">
-                  <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
-                  <i class=" fa fa-search-plus  p-3" aria-hidden="true"></i>
-                </div>
-              </a>
-              </div>
-           
-            </div>
-
-            <div class="layer col-xxl-4 col-xl-4 col-md-6 col-sm-12  pb-5 d-flex justify-content-center align-items-center ">
-           
-              <img src="./img/guess.png">
-              <div class="caption text-center d-flex  justify-content-center align-items-center flex-column  ">
-                <a href="https://saraabdelrhman.github.io/Guess-number/" 
-                class="link-offset-2 link-underline link-underline-opacity-0">
-                <h5>Guess the number</h5>
-                <div class="captions d-flex text-center  ">
-                  <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
-                  <i class=" fa fa-search-plus  p-3" aria-hidden="true"></i>
-                </div>
-              </a>
-              </div>
-           
-            </div>
-            <div class="layer col-xxl-4 col-xl-4 col-md-6 col-sm-12  pb-5 d-flex justify-content-center align-items-center ">
-           
-              <img src="./img/to do.png">
-              <div class="caption text-center d-flex  justify-content-center align-items-center flex-column  ">
-                <a href="https://saraabdelrhman.github.io/To-do-list/" 
-                class="link-offset-2 link-underline link-underline-opacity-0">
-                <h5>To Do List</h5>
-                <div class="captions d-flex text-center  ">
-                  <i class="fa fa-chain-broken p-3" aria-hidden="true"></i>
-                  <i class=" fa fa-search-plus  p-3" aria-hidden="true"></i>
-                </div>
-              </a>
-              </div>
-           
-            </div>
-
-        </div>
-      </div>
-      
     </div>
+  </div>
 
-  </div>
-  </div>
-  </div>
-  </div>
-   <div class="container-fluid fix2 p-0 contact h-auto " id="contact">
-    <div class="layer3 p-0 pt-5 h-auto  ">
-      <div class="container bg-white pt-3 h-auto ">
-        <div class="row h-auto ">
+  <div class="container-fluid fix2 p-0 contact h-auto" id="contact">
+    <div class="layer3 p-0 pt-5 h-auto">
+      <div class="container bg-white pt-3 h-auto">
+        <div class="row h-auto">
           <div class="send col-lg-6">
-            <h5 class="line2 text-lg-start ">Send Message Us</h5>
+            <h5 class="line2 text-lg-start">Send Message Us</h5>
             <div class="inputs row gy-4 pt-3">
               <div class="col-12">
                 <input class="form-control" type="text" name="name" placeholder="Your Name">
@@ -548,10 +509,10 @@
                 <input class="form-control" type="text" name="text" placeholder="Subject">
               </div>
               <div class="col-12">
-                <textarea class="form-control " placeholder="Message"></textarea>
+                <textarea class="form-control" placeholder="Message"></textarea>
               </div>
               <div class="col-12">
-                <button class="button1 mb-3 mt-2 ">Send Message</button>
+                <button class="button1 mb-3 mt-2">Send Message</button>
               </div>
             </div>
           </div>
@@ -566,11 +527,21 @@
               <li><a href="mailto:saraabdelrhman162@gmail.com">saraabdelrhman162@gmail.com</a></li>
             </ul>
           </div>
-          <footer class="text-white py-3 d-flex justify-content-center" style="background-color: #0077ff;">
-            <div class="container-fluid">
-            </div>
-          </footer>
-          <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-white py-3 d-flex justify-content-center" style="background-color: #0077ff;">
+    <div class="container-fluid">
+      <!-- Footer content -->
+    </div>
+  </footer>
+
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
